@@ -1,0 +1,176 @@
+/* General Container Styles */
+.sell-page-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.sell-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sell-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  letter-spacing: 1.2px;
+}
+
+.sell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Added gap between form elements */
+}
+
+.sell-form label {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.sell-form input[type="text"],
+.sell-form textarea,
+.sell-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sell-form input[type="text"]:hover,
+.sell-form textarea:hover,
+.sell-form select:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.sell-form input[type="file"] {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sell-form input[type="file"]:hover {
+  background-color: #f0f0f0;
+}
+
+.sell-form textarea {
+  resize: vertical;
+  height: 150px; /* Increased height */
+}
+
+.sell-form button {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-weight: bold; /* Added bold font */
+  letter-spacing: 0.5px; /* Slightly spaced out letters */
+}
+
+.sell-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sell-form button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sell-form button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ff0000;
+  text-align: center;
+}
+
+.sell-form input[type="text"]:focus,
+.sell-form textarea:focus,
+.sell-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.sell-form select {
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>') no-repeat right 10px center;
+  background-size: 16px;
+  background-color: #fff;
+  padding-right: 30px;
+}
+
+.sell-form select:hover {
+  background-color: #f8f8f8;
+}
+
+.sell-form select:focus {
+  background-color: #fff;
+  border-color: #007bff;
+}
+
+.sell-form .custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sell-form .custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.sell-form input[type="file"] {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sell-container {
+    padding: 15px;
+  }
+
+  .sell-form input[type="text"],
+  .sell-form textarea,
+  .sell-form select {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .sell-form button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
